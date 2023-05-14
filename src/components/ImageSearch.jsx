@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export const ImageSearch = ({ searchText }) => {
   const [text, setText] = useState("");
-  
+
   const onSubmit = (e) => {
     e.preventDefault();
     searchText(text);
@@ -11,7 +11,7 @@ export const ImageSearch = ({ searchText }) => {
   return (
     <div className="max-w-sm rouded overflow-hidden my-10 mx-auto">
       <form onSubmit={onSubmit} className="w-full max-w-sm">
-        <div className="flex items-center border-b border-b-2 border-teal-500 py-2">
+        <div className="flex items-center border-b-2 border-teal-500 py-2">
           <input
             onChange={(e) => setText(e.target.value)}
             type="text"
